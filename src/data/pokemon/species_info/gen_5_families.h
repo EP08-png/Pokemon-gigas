@@ -9863,12 +9863,12 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
 
     [SPECIES_GOLURK] =
     {
-        .baseHP        = 89,
-        .baseAttack    = 124,
-        .baseDefense   = 80,
+        .baseHP        = 90,
+        .baseAttack    = 134,
+        .baseDefense   = 100,
         .baseSpeed     = 55,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 80,
+        .baseSpAttack  = 65,
+        .baseSpDefense = 90,
         .types = MON_TYPES(TYPE_GROUND, TYPE_GHOST),
         .catchRate = 90,
         .expYield = 169,
@@ -9879,7 +9879,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
-        .abilities = { ABILITY_IRON_FIST, ABILITY_KLUTZ, ABILITY_NO_GUARD },
+        .abilities = { ABILITY_IRON_FIST, ABILITY_SHEER_FORCE, ABILITY_NO_GUARD },
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = TRUE,
         .speciesName = _("Golurk"),
