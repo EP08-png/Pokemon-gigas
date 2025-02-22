@@ -12967,13 +12967,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_GEN_4_CROSS_EVOS
     [SPECIES_RHYPERIOR] =
     {
-        .baseHP        = 115,
-        .baseAttack    = 140,
+        .baseHP        = 140,
+        .baseAttack    = 100,
         .baseDefense   = 130,
-        .baseSpeed     = 40,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 55,
-        .types = MON_TYPES(TYPE_GROUND, TYPE_ROCK),
+        .baseSpeed     = 30,
+        .baseSpAttack  = 85,
+        .baseSpDefense = 115,
+        .types = MON_TYPES(TYPE_DRAGON, TYPE_ROCK),
         .catchRate = 30,
     #if P_UPDATED_EXP_YIELDS >= GEN_8
         .expYield = 268,
@@ -14362,11 +14362,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_SCIZOR] =
     {
         .baseHP        = 70,
-        .baseAttack    = 130,
+        .baseAttack    = 140,
         .baseDefense   = 100,
         .baseSpeed     = 65,
-        .baseSpAttack  = 55,
-        .baseSpDefense = 80,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 100,
         .types = MON_TYPES(TYPE_BUG, TYPE_STEEL),
         .catchRate = 25,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 175 : 200,
@@ -15577,13 +15577,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_GYARADOS] =
     {
-        .baseHP        = 95,
-        .baseAttack    = 125,
-        .baseDefense   = 79,
+        .baseHP        = 85,
+        .baseAttack    = 120,
+        .baseDefense   = 89,
         .baseSpeed     = 81,
-        .baseSpAttack  = 60,
+        .baseSpAttack  = 125,
         .baseSpDefense = 100,
-        .types = MON_TYPES(TYPE_WATER, TYPE_FLYING),
+        .types = MON_TYPES(TYPE_WATER, TYPE_DRAGON),
         .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 189 : 214,
         .evYield_Attack = 2,
@@ -15653,13 +15653,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_MEGA_EVOLUTIONS
     [SPECIES_GYARADOS_MEGA] =
     {
-        .baseHP        = 95,
-        .baseAttack    = 155,
-        .baseDefense   = 109,
-        .baseSpeed     = 81,
-        .baseSpAttack  = 70,
-        .baseSpDefense = 130,
-        .types = MON_TYPES(TYPE_WATER, TYPE_DARK),
+        .baseHP        = 85,
+        .baseAttack    = 120,
+        .baseDefense   = 104,
+        .baseSpeed     = 101,
+        .baseSpAttack  = 190,
+        .baseSpDefense = 100,
+        .types = MON_TYPES(TYPE_WATER, TYPE_DRAGON),
         .catchRate = 45,
         .expYield = 224,
         .evYield_Attack = 2,
@@ -15668,7 +15668,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_MOLD_BREAKER, ABILITY_MOLD_BREAKER, ABILITY_MOLD_BREAKER },
+        .abilities = { ABILITY_SUPREME_OVERLORD, ABILITY_SUPREME_OVERLORD, ABILITY_SUPREME_OVERLORD },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("Gyarados"),
         .cryId = CRY_GYARADOS_MEGA,
