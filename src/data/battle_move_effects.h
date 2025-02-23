@@ -210,6 +210,12 @@ const struct BattleMoveEffect gBattleMoveEffects[NUM_BATTLE_MOVE_EFFECTS] =
         .battleTvScore = 7,
     },
 
+    [EFFECT_ROULETTE] =
+    {
+        .battleScript = BattleScript_Roulette,
+        .battleTvScore = 7,
+    },
+
     [EFFECT_FUSION_COMBO] =
     {
         .battleScript = BattleScript_EffectHit,

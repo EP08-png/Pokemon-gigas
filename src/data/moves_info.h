@@ -8338,6 +8338,27 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_SheerCold,
     },
 
+    [MOVE_ROULETTE] =
+    {
+        .name = COMPOUND_STRING("Roulette"),
+        .description = COMPOUND_STRING(
+            "Attacks Target and Itself\n"
+            "if it fails user dies."),
+        .effect = EFFECT_ROULETTE,
+        .power = 1,
+        .type = TYPE_NORMAL,
+        .accuracy = 50,
+        .pp = 5,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS,
+        .contestCategory = CONTEST_CATEGORY_BEAUTY,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_HAIL, COMBO_STARTER_MIND_READER},
+        .battleAnimScript = gBattleAnimMove_SheerCold,
+    },
+
     [MOVE_MUDDY_WATER] =
     {
         .name = COMPOUND_STRING("Muddy Water"),

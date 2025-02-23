@@ -4224,7 +4224,7 @@ static const struct LevelUpMove sSylveonLevelUpLearnset[] = {
 
 #if P_FAMILY_PORYGON
 static const struct LevelUpMove sPorygonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_ROULETTE),
     LEVEL_UP_MOVE( 1, MOVE_CONVERSION),
     LEVEL_UP_MOVE( 5, MOVE_RECYCLE),
     LEVEL_UP_MOVE(10, MOVE_MAGNET_RISE),

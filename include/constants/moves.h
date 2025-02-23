@@ -910,7 +910,10 @@
 
 #define MOVES_COUNT_GEN9 848
 
-#define MOVES_COUNT         MOVES_COUNT_GEN9
+#define MOVE_ROULETTE (MOVES_COUNT_GEN9 + 1)
+#define CustomMoveEnds (MOVE_ROULETTE + 1)
+
+#define MOVES_COUNT        CustomMoveEnds
 
 // Z Moves
 #define MOVE_BREAKNECK_BLITZ (MOVES_COUNT + 0)

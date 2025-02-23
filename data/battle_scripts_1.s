@@ -3401,6 +3401,17 @@ BattleScript_LeafGuardPreventsRest::
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
+
+BattleScript_Roulette::
+	attackcanceler
+	attackstring
+	ppreduce
+	accuracycheck BattleScript_RouletteFail, ACC_CURR_MOVE
+	typecalc
+	jumpifmovehadnoeffect BattleScript_HitFromAtkAnimation
+	tryKO BattleScript_KOFail
+	trysetdestinybondtohappen
+	goto BattleScript_HitFromAtkAnimation
 BattleScript_EffectOHKO::
 	attackcanceler
 	attackstring
@@ -3416,6 +3427,13 @@ BattleScript_KOFail::
 	printfromtable gKOFailedStringIds
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
+BattleScript_RouletteFail::
+	pause B_WAIT_TIME_LONG
+	printfromtable gKOFailedStringIds
+	setatkhptozero
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_MoveEnd
+	
 
 BattleScript_EffectSuperFang::
 	attackcanceler
